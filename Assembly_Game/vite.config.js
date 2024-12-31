@@ -4,5 +4,8 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base:"/Assembly-Game--With-React"
+  base: '/React_Projects/Assembly_Game/', // Update to match your GitHub Pages path
+  build: {
+    outDir: 'build', // Ensures the output folder matches gh-pages' expectations
+  },
 })
